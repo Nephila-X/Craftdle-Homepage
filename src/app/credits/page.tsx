@@ -1,4 +1,3 @@
-// src/app/credits/page.tsx
 import type { Metadata } from "next";
 import Credits from "./credits";
 

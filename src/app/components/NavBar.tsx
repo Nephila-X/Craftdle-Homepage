@@ -46,6 +46,15 @@ export default function NavBar() {
         </li>
         <li>
           <Link 
+            href="https://www.patreon.com/craftdle" 
+            className={isActive('/play') ? 'active' : ''} 
+            onClick={() => setIsOpen(false)}
+          >
+            Support Us
+          </Link>
+        </li>
+        <li>
+          <Link 
             href="/credits" 
             className={isActive('/credits') ? 'active' : ''} 
             onClick={() => setIsOpen(false)}
