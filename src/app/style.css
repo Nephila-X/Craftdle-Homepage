@@ -1,0 +1,375 @@
+:root {
+	--DarkRed: #AA0000;
+	--Red: #FF5555;
+	--Gold: #FFAA00;
+	--Yellow: #FFFF55;
+	--DarkGreen: #00AA00;
+	--Green: #55FF55;
+	--Aqua: #55FFFF;
+	--DarkAqua: #00AAAA;
+	--DarkBlue: #0000AA;
+	--Blue: #5555FF;
+	--LightPurple: #FF55FF;
+	--DarkPurple: #AA00AA;
+	--White: #FFFFFF;
+	--Gray: #AAAAAA;
+	--DarkGray: #555555;
+	--Black: #000000;
+}
+
+@font-face {
+	font-family: MinecraftRegular;
+	src: url("@/assets/minecraft-font/MinecraftRegular.otf");
+}
+
+@font-face {
+	font-family: MinecraftItalic;
+	src: url("@/assets/minecraft-font/MinecraftItalic.otf");
+}
+
+::selection {
+	background-color: rgba(99, 176, 69, 0.5);
+}
+
+html,
+body,
+#wrapper {
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	display: grid;
+	grid-template-rows: min-content auto min-content;
+	min-height: 100dvh;
+	font-family: MinecraftRegular, sans-serif;
+	font-size: 15px;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	background-color: rgb(38, 36, 35);
+	z-index: 1000;
+}
+
+#navHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+#craftdleLogo {
+	height: 50px;
+	display: block;
+}
+
+#navbar {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+#menuToggle {
+	display: none;
+	font-size: 2rem;
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+.navLinks {
+	list-style: none;
+	padding: 10px 20px;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.navLinks li a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.navLinks li a:hover {
+	text-decoration: underline;
+}
+
+.navLinks li a.active {
+	color: rgb(99, 176, 69);
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 100px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 100px;
+	color: white;
+	width: auto;
+}
+
+#comparison {
+	background-image: url('/imgs/comperation_bg.png');
+}
+
+#comparison strong {
+	color: #ffcc00;
+}
+
+#comparisonTable {
+	width: 100%;
+	overflow: auto;
+}
+
+#comparison table {
+	border-collapse: collapse;
+	width: 100%;
+	min-width: max-content;
+	border: 1px solid black;
+}
+
+#comparison thead {
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+#comparison th,
+#comparison td {
+	padding: 10px;
+}
+
+#comparison tbody tr:nth-child(even) {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#comparison tbody tr:nth-child(odd) {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#comparison td:first-child {
+	font-weight: 600;
+	text-align: left;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+footer ul {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer ul li {
+	background-color: rgb(38, 36, 35);
+	border-radius: 50%;
+	padding: 10px;
+}
+
+footer ul li img {
+	display: block;
+	width: 40px;
+	height: 40px;
+	object-fit: contain;
+}
+
+#yt_icon:hover {
+	background-color: rgb(255, 0, 0);
+}
+
+#insta_icon:hover {
+	background-color: rgb(131, 58, 180);
+}
+
+#tiktok_icon:hover {
+	background-color: rgb(0, 211, 255);
+}
+
+#patreon_icon:hover {
+	background-color: rgb(255, 102, 0);
+}
+
+#home {
+	background-image: url('/imgs/home_bg.png');
+}
+
+#home>article {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	border-radius: 8px;
+}
+
+#versionCards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 50px 50px;
+}
+
+.versionCard {
+	width: calc(40%);
+	min-width: min-content;
+	text-align: justify;
+}
+
+.versionCard img {
+	width: 450px;
+	max-width: 70dvw;
+	margin: 10px auto;
+	display: block;
+}
+
+.craftdleTitle {
+	height: 200px;
+	object-fit: contain;
+	object-position: top;
+}
+
+.craftdleThumbnail {
+	border: 5px rgba(0, 0, 0, 0.5) solid;
+}
+
+.button {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	background-color: rgb(59, 132, 39);
+	border-top: 10px solid rgb(101, 157, 80);
+	border-right: 10px solid rgb(28, 63, 19);
+	border-bottom: 10px solid rgb(22, 79, 14);
+	border-left: 10px solid rgb(66, 115, 52);
+}
+
+.button:hover {
+	background-color: rgb(53, 113, 36);
+	border-top: 10px solid rgb(93, 144, 74);
+	border-right: 10px solid rgb(25, 56, 17);
+	border-bottom: 10px solid rgb(19, 71, 13);
+	border-left: 10px solid rgb(54, 95, 43);
+	color: rgb(219, 219, 219);
+}
+
+#credits {
+	display: block;
+	overflow: hidden;
+	text-decoration: none;
+	color: var(--Gray);
+	background-image: url("@/assets/imgs/credits_bg.png");
+	background-position: center;
+	background-size: 1000px;
+	background-repeat: repeat;
+	font-size: 4vmin;
+}
+
+#creditsContainer {
+	width: calc(100% - 100px);
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	translate: -50% 0;
+	text-align: center;
+}
+
+#creditsCraftdleTitle {
+	max-width: 60dvw;
+	max-height: 60dvh;
+	object-fit: contain;
+	margin: auto;
+	display: block;
+}
+
+#credits .title {
+	margin: 0;
+	text-align: center;
+}
+
+#credits h2 {
+	font-size: 6vmin;
+	color: var(--Gold);
+}
+
+#credits h3 {
+	font-size: 5vmin;
+	color: var(--LightPurple);
+}
+
+#credits h4 {
+	font-size: 4vmin;
+	color: var(--Aqua);
+}
+
+.creditTextContainer,
+.creditMessageContainer {
+	display: grid;
+	gap: 40px;
+	margin: 10px 0;
+}
+
+.creditTextContainer {
+	grid-template-columns: 1fr 1fr;
+}
+
+.creditTitle {
+	justify-self: end;
+}
+
+.creditText {
+	justify-self: start;
+	text-align: start;
+}
+
+.creditMessageContainer .creditText {
+	justify-self: center;
+	text-align: center;
+}
+
+@media screen and (orientation: portrait) {
+	main {
+		padding: 5px;
+	}
+
+	#navbar {
+		display: block;
+	}
+
+	#menuToggle {
+		display: block;
+	}
+
+	.navLinks {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		justify-content: end;
+		position: absolute;
+		top: 60px;
+		right: 0;
+		background-color: rgb(38, 36, 35);
+		width: 200px;
+		padding: 15px;
+		display: none;
+		border-radius: 0 0 0 8px;
+	}
+
+	.navLinks.open {
+		display: flex;
+	}
+
+	.navLinks li {
+		margin: 10px 0;
+	}
+}
