@@ -44,7 +44,7 @@ export default function HomePage() {
                             alt="Experimental Test Version of Craftdle"
                         />
                         <h3>Test Version</h3>
-                        <p>Try the newest experimental features and help shape Craftdle's future.</p>
+                        <p>Try the newest experimental features and help shape Craftdle&apos;s future.</p>
                         <p>Your feedback is important for continuous improvements.</p>
                         <img
                             className="craftdleThumbnail"
