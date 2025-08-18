@@ -19,12 +19,12 @@
 
 @font-face {
 	font-family: MinecraftRegular;
-	src: url("@/assets/minecraft-font/MinecraftRegular.otf");
+	src: url("../assets/minecraft-font/MinecraftRegular.otf");
 }
 
 @font-face {
 	font-family: MinecraftItalic;
-	src: url("@/assets/minecraft-font/MinecraftItalic.otf");
+	src: url("../assets/minecraft-font/MinecraftItalic.otf");
 }
 
 ::selection {
@@ -268,7 +268,7 @@ footer ul li img {
 	overflow: hidden;
 	text-decoration: none;
 	color: var(--Gray);
-	background-image: url("@/assets/imgs/credits_bg.png");
+	background-image: url("../assets/imgs/credits_bg.png");
 	background-position: center;
 	background-size: 1000px;
 	background-repeat: repeat;
