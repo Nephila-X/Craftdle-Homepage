@@ -18,6 +18,7 @@ interface CreditProps {
 function Credit(props: CreditProps) {
     return <p className={props.credit.credit ? "creditTextContainer" : "creditMessageContainer"}>
         {props.credit.credit ? <strong className="creditTitle">{props.credit.credit}</strong> : null}
+        {" "}
         <span className="creditText">
             {typeof props.credit.members === "string"
                 ? props.credit.members
