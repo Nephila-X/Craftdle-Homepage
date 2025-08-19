@@ -17,8 +17,6 @@ export const metadata: Metadata = {
 		"Guideian Angel",
 		"Crafting Game",
 		"Minecraft Puzzle",
-		"Craftle",
-		"Minecraftle",
 	],
 	authors: [{ name: "Guideian Angel" }],
 	robots: "index, follow",
@@ -62,8 +60,16 @@ export default function RootLayout({
 						"@context": "https://schema.org",
 						"@type": "WebSite",
 						"name": "Craftdle",
-						"alternateName": ["craftdle.hu", "Craftdle.hu"],
+						"alternateName": [
+							"Craftdle",
+							"craftdle.hu",
+							"Craftdle.hu",
+							"Minecraft Wordle",
+							"Crafting Riddle",
+							"Crafting Puzzle"
+						],
 						"url": "https://craftdle.hu/",
+						"description": "Craftdle is a Minecraft-inspired Wordle-style crafting puzzle game, similar to Craftle or Minecraftle."
 					})}
 				</Script>
 				<Script id="ld-org" type="application/ld+json" strategy="beforeInteractive">
@@ -73,6 +79,12 @@ export default function RootLayout({
 						"url": "https://craftdle.hu/",
 						"name": "Craftdle",
 						"logo": "https://craftdle.hu/imgs/android-chrome-192x192.png",
+						"sameAs": [
+							"https://www.youtube.com/@craftdle",
+							"https://www.instagram.com/craftdle.hu",
+							"https://www.tiktok.com/@craftdle",
+							"https://www.patreon.com/craftdle"
+						]
 					})}
 				</Script>
 			</head>
