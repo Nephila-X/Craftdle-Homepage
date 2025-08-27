@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Credits from "./credits";
 
 export const metadata: Metadata = {
-  title: "Craftdle - Credits",
+  title: "Credits",
   description: "Acknowledging the creators and contributors of Craftdle."
 };
 
