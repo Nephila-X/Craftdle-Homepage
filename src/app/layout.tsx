@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./style.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://craftdle.hu"),
@@ -95,6 +96,7 @@ export default function RootLayout({
 					<Footer />
 				</div>
 			</body>
+			<SpeedInsights/>
 		</html>
 	);
 }

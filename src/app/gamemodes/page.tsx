@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Gamemodes",
+    description: "Explore the various gamemodes available in Craftdle, each offering a unique crafting puzzle experience."
+}
+
 export interface IGamemode {
     id: number;
     icon: string;
