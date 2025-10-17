@@ -107,6 +107,7 @@ nav {
 main {
 	display: grid;
 	grid-template-columns: 1fr;
+	grid-template-rows: min-content;
 	gap: 100px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -114,6 +115,10 @@ main {
 	padding: 100px;
 	color: white;
 	width: auto;
+}
+
+main > div{
+	height: min-content;
 }
 
 #comparison {
@@ -200,6 +205,10 @@ footer ul li img {
 
 #patreon_icon:hover {
 	background-color: rgb(255, 102, 0);
+}
+
+#discord_icon:hover {
+	background-color: rgb(114, 137, 218);
 }
 
 #home {
@@ -372,4 +381,73 @@ footer ul li img {
 	.navLinks li {
 		margin: 10px 0;
 	}
+}
+
+#gamemodes{
+	background-image: url('/imgs/gamemodes_bg.png');
+}
+
+#gamemodesText{
+	color: black;
+}
+
+#gamemodesContainer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+
+.gamemode{
+	display: grid;
+	grid-template-columns: min-content auto;
+	grid-template-rows: 45px 45px auto auto;
+	gap: 10px;
+	grid-template-areas: 
+		"icon name"
+		"icon difficulty"
+		"description description"
+		"disabled disabled";
+	width: 250px;
+	padding: 20px;
+	background-color: rgb(38, 36, 35);
+	border: transparent 2px solid;
+	border-radius: 20px;
+	transition: linear 0.1s;
+}
+
+.gamemode:hover{
+	transform: scale(1.05);
+	border: white 2px solid;
+}
+
+.gamemodeIcon{
+	width: 100px;
+	height: 100px;
+	object-fit: contain;
+	grid-area: icon;
+}
+
+.gamemodeName{
+	grid-area: name;
+	margin: 0;
+	font-size: 30px;
+	align-self: end;
+}
+
+.gamemodeDescription{
+	grid-area: description;
+	text-align: justify;
+}
+
+.gamemodeDifficulty{
+	grid-area: difficulty;
+	align-self: flex-start;
+	font-size: 20px;
+}
+
+.gamemodeDisabled{
+	grid-area: disabled;
+	justify-self: center;
+	color: var(--Red);
 }

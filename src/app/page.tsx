@@ -66,6 +66,16 @@ export default function HomePage() {
                 <Link className="button" href="/comparison">See the full comparison!</Link>
             </article>
 
+            <article id="gamemodesIntro">
+                <h2>Explore the Gamemodes</h2>
+                <p>
+                    Craftdle features multiple unique gamemodes that keep the experience fresh and engaging.
+                    Enjoy the classic Daily Puzzle, challenge yourself in special themed modes, or experiment with creative recipe variations.
+                    Each mode offers a different way to test your crafting knowledge and have fun with the familiar Minecraft-style mechanics.
+                </p>
+                <Link className="button" href="/gamemodes">See all gamemodes</Link>
+            </article>
+
             <article id="creators">
                 <h2>Creators of Craftdle</h2>
                 <p>
