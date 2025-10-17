@@ -25,8 +25,8 @@ export default async function Gamemodes() {
                 <h2>Gamemodes</h2>
                 <p>
                     Craftdle offers a variety of unique gamemodes that bring new ways to enjoy the crafting challenge.
-                    Each mode adds its own twist — from classic recipe guessing to themed puzzles and experimental features.
-                    Whether you're looking for a daily challenge or something fresh and creative, there's always a new way to test your crafting knowledge.
+                    Each mode adds its own twist - from classic recipe guessing to themed puzzles and experimental features.
+                    Whether you&apos;re looking for a daily challenge or something fresh and creative, there&apos;s always a new way to test your crafting knowledge.
                 </p>
             </section>
             <div id="gamemodesContainer">
