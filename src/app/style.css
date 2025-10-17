@@ -374,14 +374,17 @@ footer ul li img {
 	width: 250px;
 	padding: 20px;
 	background-color: rgb(38, 36, 35);
-	border: transparent 2px solid;
 	border-radius: 20px;
 	transition: linear 0.1s;
 }
 
 .gamemode:hover{
 	transform: scale(1.05);
-	border: white 2px solid;
+}
+
+#gamemodes:has(.gamemode:hover) .gamemode:not(:hover){
+	opacity: 0.7;
+	transform: scale(0.98);
 }
 
 .gamemodeIcon{
