@@ -346,43 +346,6 @@ footer ul li img {
 	text-align: center;
 }
 
-@media screen and (orientation: portrait) {
-	main {
-		padding: 5px;
-	}
-
-	#navbar {
-		display: block;
-	}
-
-	#menuToggle {
-		display: block;
-	}
-
-	.navLinks {
-		display: flex;
-		flex-direction: column;
-		align-items: end;
-		justify-content: end;
-		position: absolute;
-		top: 60px;
-		right: 0;
-		background-color: rgb(38, 36, 35);
-		width: 200px;
-		padding: 15px;
-		display: none;
-		border-radius: 0 0 0 8px;
-	}
-
-	.navLinks.open {
-		display: flex;
-	}
-
-	.navLinks li {
-		margin: 10px 0;
-	}
-}
-
 #gamemodes{
 	background-image: url('/imgs/gamemodes_bg.png');
 }
@@ -450,4 +413,45 @@ footer ul li img {
 	grid-area: disabled;
 	justify-self: center;
 	color: var(--Red);
+}
+
+@media screen and (orientation: portrait) {
+	main {
+		padding: 5px;
+	}
+
+	#navbar {
+		display: block;
+	}
+
+	#menuToggle {
+		display: block;
+	}
+
+	.navLinks {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		justify-content: end;
+		position: absolute;
+		top: 60px;
+		right: 0;
+		background-color: rgb(38, 36, 35);
+		width: 200px;
+		padding: 15px;
+		display: none;
+		border-radius: 0 0 0 8px;
+	}
+
+	.navLinks.open {
+		display: flex;
+	}
+
+	.navLinks li {
+		margin: 10px 0;
+	}
+
+	.gamemode{
+		width: 100%;
+	}
 }
