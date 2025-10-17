@@ -19,8 +19,6 @@ export default async function Gamemodes() {
     } = await res.json();
     const gamemodes = data.data.gamemodes;
 
-    console.log(gamemodes);
-
     return (
         <main id="gamemodes">
             <section id="gamemodesText">
