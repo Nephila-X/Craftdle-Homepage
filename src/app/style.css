@@ -67,7 +67,7 @@ nav {
 
 #navbar {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: min-content auto;
 	grid-template-rows: 1fr;
 }
 
@@ -87,6 +87,8 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: fit-content;
+	margin-left: auto;
 	gap: 20px;
 }
 
