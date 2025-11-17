@@ -15,11 +15,11 @@ export const metadata: Metadata = {
 		"Wordle",
 		"Craftdle",
 		"Crafting Puzzle",
-		"Guideian Angel",
+		"NephilaX",
 		"Crafting Game",
 		"Minecraft Puzzle",
 	],
-	authors: [{ name: "Guideian Angel" }],
+	authors: [{ name: "NephilaX" }],
 	robots: "index, follow",
 	icons: {
 		icon: [

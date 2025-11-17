@@ -18,7 +18,7 @@ export default function Footer() {
                 </ul>
             </div>
             <div id="footerText">
-                <p>Craftdle is a product of Guideian Angel since 2024.</p>
+                <p>Craftdle is a product of NephilaX since 2024.</p>
                 <p>© 2025 Craftdle. All rights reserved.</p>
             </div>
         </footer>
