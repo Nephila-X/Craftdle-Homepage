@@ -18,7 +18,9 @@ export interface IGamemode {
 }
 
 export default async function Gamemodes() {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/game/gamemodes`);
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/game/gamemodes`, {
+        cache: "no-store",
+    });
     const data: {
         data: {
             gamemodes: IGamemode[]

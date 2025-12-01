@@ -66,7 +66,10 @@ function CreditGroup(props: CreditGroupProps) {
 }
 
 export default async function Credits() {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/credits`);
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/credits`, {
+        cache: "no-store",
+    });
+
     const data = await res.json();
 
     return (
