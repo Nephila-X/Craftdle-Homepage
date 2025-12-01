@@ -97,7 +97,7 @@ export default function Guide() {
                 <article id="gameplayGuessing">
                     <h3>Guessing Rules</h3>
                     <ul>
-                        <li>You can only guess an existing item's recipe</li>
+                        <li>You can only guess an existing item&aposs recipe</li>
                         <li>
                             You can only guess a recipe once (but some items have more
                             than one recipe)
@@ -128,7 +128,7 @@ export default function Guide() {
                         during the game.
                     </p>
                     <p>
-                        <b>Recipe sliding</b>: When the size of an item's crafting
+                        <b>Recipe sliding</b>: When the size of an item&aposs crafting
                         recipe is smaller than 3x3, it can be placed in several
                         positions on the crafting table. For example: Stone Button, Iron
                         Sword, Crafting Table, etc.
