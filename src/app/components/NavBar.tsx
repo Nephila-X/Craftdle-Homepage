@@ -17,9 +17,9 @@ export default function NavBar() {
         <Link href="/">
           <img id="craftdleLogo" src={logo.src} alt="Craftdle Logo" />
         </Link>
-        <button 
-          id="menuToggle" 
-          onClick={() => setIsOpen(!isOpen)} 
+        <button
+          id="menuToggle"
+          onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle navigation"
         >
           ☰
@@ -27,45 +27,54 @@ export default function NavBar() {
       </div>
       <ul className={isOpen ? "navLinks open" : "navLinks"}>
         <li>
-          <Link 
-            href="/" 
-            className={isActive('/') ? 'active' : ''} 
+          <Link
+            href="/"
+            className={isActive('/') ? 'active' : ''}
             onClick={() => setIsOpen(false)}
           >
             Home
           </Link>
         </li>
         <li>
-          <Link 
-            href="/comparison" 
-            className={isActive('/comparison') ? 'active' : ''} 
+          <Link
+            href="/comparison"
+            className={isActive('/comparison') ? 'active' : ''}
             onClick={() => setIsOpen(false)}
           >
             Why Choose Craftdle?
           </Link>
         </li>
         <li>
-          <Link 
-            href="/gamemodes" 
-            className={isActive('/gamemodes') ? 'active' : ''} 
+          <Link
+            href="/gamemodes"
+            className={isActive('/gamemodes') ? 'active' : ''}
             onClick={() => setIsOpen(false)}
           >
             Gamemodes
           </Link>
         </li>
         <li>
-          <Link 
-            href="https://www.patreon.com/craftdle" 
-            className={isActive('/play') ? 'active' : ''} 
+          <Link
+            href="/guide"
+            className={isActive('/guide') ? 'active' : ''}
+            onClick={() => setIsOpen(false)}
+          >
+            How to Play?
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="https://www.patreon.com/craftdle"
+            className={isActive('/play') ? 'active' : ''}
             onClick={() => setIsOpen(false)}
           >
             Support Us
           </Link>
         </li>
         <li>
-          <Link 
-            href="/credits" 
-            className={isActive('/credits') ? 'active' : ''} 
+          <Link
+            href="/credits"
+            className={isActive('/credits') ? 'active' : ''}
             onClick={() => setIsOpen(false)}
           >
             Credits

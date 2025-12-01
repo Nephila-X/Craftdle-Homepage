@@ -119,7 +119,7 @@ main {
 	width: auto;
 }
 
-main > div{
+main>div {
 	height: min-content;
 }
 
@@ -348,27 +348,27 @@ footer ul li img {
 	text-align: center;
 }
 
-#gamemodes{
+#gamemodes {
 	background-image: url('/imgs/gamemodes_bg.png');
 }
 
-#gamemodesText{
+#gamemodesText {
 	color: black;
 }
 
-#gamemodesContainer{
+#gamemodesContainer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 20px;
 }
 
-.gamemode{
+.gamemode {
 	display: grid;
 	grid-template-columns: min-content auto;
 	grid-template-rows: 45px 45px auto auto;
 	gap: 10px;
-	grid-template-areas: 
+	grid-template-areas:
 		"icon name"
 		"icon difficulty"
 		"description description"
@@ -380,44 +380,92 @@ footer ul li img {
 	transition: linear 0.1s;
 }
 
-.gamemode:hover{
+.gamemode:hover {
 	transform: scale(1.05);
 }
 
-#gamemodes:has(.gamemode:hover) .gamemode:not(:hover){
+#gamemodes:has(.gamemode:hover) .gamemode:not(:hover) {
 	opacity: 0.7;
 	transform: scale(0.98);
 }
 
-.gamemodeIcon{
+.gamemodeIcon {
 	width: 100px;
 	height: 100px;
 	object-fit: contain;
 	grid-area: icon;
 }
 
-.gamemodeName{
+.gamemodeName {
 	grid-area: name;
 	margin: 0;
 	font-size: 30px;
 	align-self: end;
 }
 
-.gamemodeDescription{
+.gamemodeDescription {
 	grid-area: description;
 	text-align: justify;
 }
 
-.gamemodeDifficulty{
+.gamemodeDifficulty {
 	grid-area: difficulty;
 	align-self: flex-start;
 	font-size: 20px;
 }
 
-.gamemodeDisabled{
+.gamemodeDisabled {
 	grid-area: disabled;
 	justify-self: center;
 	color: var(--Red);
+}
+
+#guideContent {
+	overflow-y: auto;
+	scroll-behavior: smooth;
+	font-size: 4vmin;
+	color: var(--DarkGray);
+	background-color: #c2c3c3;
+}
+
+#guideContent b:not(.indicator) {
+	color: var(--Red);
+	text-shadow: 0 0 5px #000000;
+}
+
+#guideContent li {
+	list-style: square;
+}
+
+#controlContent {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#controlContent>article {
+	flex-flow: 100%;
+	width: 30%;
+}
+
+#controlContent>article video {
+	width: 100%;
+}
+
+.indicator {
+	text-shadow: 0 0 5px #000000;
+}
+
+#redIndicator {
+	color: var(--DarkRed);
+}
+
+#yellowIndicator {
+	color: var(--Gold);
+}
+
+#greenIndicator {
+	color: var(--Green);
 }
 
 @media screen and (orientation: portrait) {
@@ -456,7 +504,11 @@ footer ul li img {
 		margin: 10px 0;
 	}
 
-	.gamemode{
+	.gamemode {
 		width: 100%;
+	}
+
+	#controlContent>article {
+		width: auto;
 	}
 }
