@@ -51,7 +51,7 @@ export default function HomePage() {
                             src={testThumbnail.src}
                             alt="Thumbnail for Experimental Test Version of Craftdle"
                         />
-                        <a className="button" href="https://test.craftdle.nephilax.dev">Play now!</a>
+                        <a className="button" href="https://craftdle-test.nephilax.dev">Play now!</a>
                     </section>
                 </div>
             </article>

@@ -378,10 +378,21 @@ footer ul li img {
 	background-color: rgb(38, 36, 35);
 	border-radius: 20px;
 	transition: linear 0.1s;
+	color: var(--White);
+	text-decoration: none;
 }
 
 .gamemode:hover {
 	transform: scale(1.05);
+}
+
+.disabledGamemode:hover {
+	filter: grayscale(1);
+	cursor: not-allowed;
+}
+
+.disabledGamemode:hover * {
+	color: var(--White) !important;
 }
 
 #gamemodes:has(.gamemode:hover) .gamemode:not(:hover) {

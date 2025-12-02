@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import Link from "next/link";
+import { Gamemode } from "./gamemode";
 
 export const metadata: Metadata = {
     title: "Gamemodes",
@@ -40,15 +42,7 @@ export default async function Gamemodes() {
             </section>
             <div id="gamemodesContainer">
                 {gamemodes.map((gamemode) => {
-                    return (
-                        <article key={gamemode.id} className="gamemode">
-                            <h3 className="gamemodeName">{gamemode.name}</h3>
-                            <p className="gamemodeDescription">{gamemode.description}</p>
-                            <span className="gamemodeDifficulty" style={{ color: `#${gamemode.difficulty.color}` }}>{gamemode.difficulty.name}</span>
-                            <img className="gamemodeIcon" src={`${process.env.NEXT_PUBLIC_SERVER_URL}/assets/gamemodes/${gamemode.icon}`} alt={gamemode.name} />
-                            {gamemode.disabled && <strong className="gamemodeDisabled"> (Currently Disabled)</strong>}
-                        </article>
-                    );
+                    return <Gamemode key={gamemode.id} gamemode={gamemode} />
                 })}
             </div>
         </main>
