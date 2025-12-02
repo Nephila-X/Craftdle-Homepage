@@ -1,6 +1,7 @@
 import { Metadata } from "next";
-import Link from "next/link";
 import { Gamemode } from "./gamemode";
+
+export const revalidate = 0
 
 export const metadata: Metadata = {
     title: "Gamemodes",

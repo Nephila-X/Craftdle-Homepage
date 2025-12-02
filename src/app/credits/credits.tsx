@@ -1,6 +1,8 @@
 import React, { JSX } from "react";
 import craftdleTitle from "@/assets/imgs/craftdle_title.png"
 
+export const revalidate = 0
+
 interface Credit {
     credit?: string;
     members: Array<string | Credit>;
