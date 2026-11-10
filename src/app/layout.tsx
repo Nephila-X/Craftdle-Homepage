@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+// @ts-expect-error Next.js loads this global stylesheet at runtime.
 import "./style.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://craftdle.hu"),
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
 	robots: "index, follow",
 	icons: {
 		icon: [
+            { url: "/imgs/favicon.ico", type: "image/x-icon" },
 			{ url: "/imgs/favicon-16x16.png", sizes: "16x16", type: "image/png" },
 			{ url: "/imgs/favicon-32x32.png", sizes: "32x32", type: "image/png" },
 			{ url: "/imgs/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
 			{ url: "/imgs/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
 		],
 		apple: "/imgs/apple-touch-icon.png",
-		shortcut: "/imgs/favicon.ico",
 	},
 	openGraph: {
 		title: "Craftdle",
@@ -96,7 +96,6 @@ export default function RootLayout({
 					<Footer />
 				</div>
 			</body>
-			<SpeedInsights/>
 		</html>
 	);
 }
