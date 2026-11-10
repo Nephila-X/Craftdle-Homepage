@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-// @ts-expect-error Next.js loads this global stylesheet at runtime.
 import "./style.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
